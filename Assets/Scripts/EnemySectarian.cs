@@ -1,27 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*
+
 public class EnemySectarian : Enemy
 {
-    //public int health;
-    public int attackPoints;
-    public Player player;
-    CombatPosition _combatposition;
-
-    private void Start()
-    {
-        
-    }
-
-    private void Update()
-    {
-        EnemyDies();
-    }
-    public void Setcombat(CombatPosition combatPosition)
-    {
-        _combatposition = combatPosition;
-    }
     public void EnemyTurn()
     {
         if (health <= 15 && health > 11)
@@ -35,16 +17,6 @@ public class EnemySectarian : Enemy
         else if (health > 0 && health <= 6)
         {
             Regeneration();
-        }
-    }
-
-    public void EnemyDies()
-    {
-        if (health <= 0)
-        {
-            _combatposition.salircombate();
-            Destroy(gameObject);
-            health = 15;
         }
     }
     public void BasicDamage()
@@ -63,4 +35,3 @@ public class EnemySectarian : Enemy
         Debug.Log("El enemigo se curo 5 de vida");
     }
 }
-*/

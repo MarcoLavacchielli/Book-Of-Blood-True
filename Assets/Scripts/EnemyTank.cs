@@ -1,27 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*
+
 public class EnemyTank : Enemy
 {
-    //public int health;
-    public int attackPoints;
-    public Player player;
-    CombatPosition _combatposition;
-
-    private void Start()
-    {
-        
-    }
-
-    private void Update()
-    {
-        EnemyDies();
-    }
-    public void Setcombat(CombatPosition combatPosition)
-    {
-        _combatposition = combatPosition;
-    }
     public void EnemyTurn()
     {
         if (health <= 20 && health > 15)
@@ -35,16 +17,6 @@ public class EnemyTank : Enemy
         else if (health > 0 && health <= 7)
         {
             Regeneration();
-        }
-    }
-
-    public void EnemyDies()
-    {
-        if (health <= 0)
-        {
-            _combatposition.salircombate();
-            Destroy(gameObject);
-            health = 20;
         }
     }
     public void BasicDamage()
@@ -63,4 +35,3 @@ public class EnemyTank : Enemy
         Debug.Log("El enemigo se curo 6 de vida");
     }
 }
-*/
