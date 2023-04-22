@@ -129,7 +129,7 @@ MonoBehaviour:
   DoorContador: 3
   DoorCamera: {fileID: 0}
   player: {fileID: 0}
-  playerColl: {fileID: 0}
+  playerColl: {fileID: 8796230871782648617}
   playerRB: {fileID: 0}
   CamarasDoor:
   - {fileID: 0}
