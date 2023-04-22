@@ -83,6 +83,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &5575686014080372467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381444770541132238}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &381444770541132238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5575686014080372467}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8077958657708868334}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8077958657340852551
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +183,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8077958658664785622}
+  - {fileID: 381444770541132238}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -251,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7864799debd9f1f49a415e9631e6210e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyy: {fileID: 2403240894493198771, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
+  enemyAldean: {fileID: 1354126364937265583, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
   combatscript: {fileID: 5790167006782233436}
   enemyGObj: {fileID: 8249360497324799467, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
   enemytransf: {fileID: 8249360497324799471, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
@@ -278,7 +310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75fb82f03a3d5846b756eb4c4bfd576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyy: {fileID: 2403240894493198771, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
+  enemyaldean: {fileID: 0}
+  enemy: 0
   deckscript: {fileID: 7910656068851151482}
   carddisplayscriptinSlot1: {fileID: 0}
   carddisplayscriptinSlot2: {fileID: 0}
@@ -286,9 +319,6 @@ MonoBehaviour:
   cardOrange1: {fileID: 0}
   cardOrange2: {fileID: 0}
   cardOrange3: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
 --- !u!114 &7910656068851151482
 MonoBehaviour:
   m_ObjectHideFlags: 0

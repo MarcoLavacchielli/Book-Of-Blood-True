@@ -12,6 +12,7 @@ public class PlayerSensor : MonoBehaviour
     public float DoorContador;
     public CinemachineVirtualCamera DoorCamera;
     public Player player;
+    public Collider playerColl;
     public Rigidbody playerRB;
     public List<CinemachineVirtualCamera> CamarasDoor;
     public CinemachineVirtualCamera ActiveCamera;
@@ -27,23 +28,25 @@ public class PlayerSensor : MonoBehaviour
             player.enabled = false;
             playerRB.constraints = RigidbodyConstraints.FreezeAll;
             EV_OnPlayerEnter.Invoke();
-           
+            playerColl.enabled = false;
+            StartCoroutine(CameraTransation());
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-            DoorContador -= 1;
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    DoorContador -= 1 * Time.deltaTime;
 
-        if (DoorContador <= 0)
-        {
-            player.enabled = true;
-            playerRB.constraints = RigidbodyConstraints.None;
-            playerRB.constraints = RigidbodyConstraints.FreezeRotation;
-            SwitchCameraDoor(CamarasDoor[0]);
-            EV_OnPlayerExit.Invoke();
-        }
-    }
+    //    if (DoorContador <= 0)
+    //    {
+    //        playerColl.enabled = false;
+    //        player.enabled = true;
+    //        playerRB.constraints = RigidbodyConstraints.None;
+    //        playerRB.constraints = RigidbodyConstraints.FreezeRotation;
+    //        SwitchCameraDoor(CamarasDoor[0]);
+    //        EV_OnPlayerExit.Invoke();
+    //    }
+    //}
    
     public void SwitchCameraDoor(CinemachineVirtualCamera Door)
     {
@@ -68,5 +71,19 @@ public class PlayerSensor : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    IEnumerator CameraTransation()
+    {
+        yield return new WaitForSeconds(DoorContador);
+
+        
+        player.enabled = true;
+        playerRB.constraints = RigidbodyConstraints.None;
+        playerRB.constraints = RigidbodyConstraints.FreezeRotation;
+        SwitchCameraDoor(CamarasDoor[0]);
+        EV_OnPlayerExit.Invoke();
+
+        yield return null;
     }
 }
