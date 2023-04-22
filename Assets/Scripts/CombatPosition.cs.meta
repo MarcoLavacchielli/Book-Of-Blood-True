@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7864799debd9f1f49a415e9631e6210e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - enemyGObj: {instanceID: 0}
+  - enemytransf: {instanceID: 0}
+  - areaWhereTheEnemySpawns: {instanceID: 0}
+  - mainCamera: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
