@@ -84,8 +84,9 @@ public class CombatPosition : MonoBehaviour
         {
             Destroy(other.gameObject);
             enemiesreminder = 1;
-            Enemy actualenemy =  Instantiate(enemyGObj[Random.Range(0, enemyGObj.Count)], areaWhereTheEnemySpawns.transform.position, areaWhereTheEnemySpawns.transform.rotation).GetComponent<EnemyAldeano>();
+            Enemy actualenemy =  Instantiate(enemyGObj[Random.Range(0, enemyGObj.Count)], areaWhereTheEnemySpawns.transform.position, areaWhereTheEnemySpawns.transform.rotation).GetComponent<Enemy>();
             actualenemy.Setcombat(this);
+            actualenemy.SetPlayer(player);
             combatscript.setenemy(actualenemy);
             Destroy(areaWhereTheEnemySpawns.gameObject);
             combatON();

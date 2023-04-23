@@ -35,6 +35,10 @@ public class Enemy : MonoBehaviour
     {
         _combatposition = combatPosition;
     }
+    public void SetPlayer(Player playerreference)
+    {
+        player = playerreference;
+    }
     public virtual void EnemyDies()
     {
         if (health <= 0)

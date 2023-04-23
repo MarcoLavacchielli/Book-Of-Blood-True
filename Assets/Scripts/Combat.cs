@@ -23,6 +23,8 @@ public class Combat : MonoBehaviour
     public Button button2;
     public Button button3;
     private bool cartafueUsada = true;
+    private bool cartafueUsada2 = true;
+    private bool cartafueUsada3 = true;
     private bool enemyattack = false;
 
     public object WaitForSeconds3 { get; private set; }
@@ -54,14 +56,14 @@ public class Combat : MonoBehaviour
     }
     public void activaryDesactivarCartaAlUsarlaSlot2()
     {
-        cartafueUsada = !cartafueUsada;
-        cardOrange2.gameObject.SetActive(cartafueUsada);
+        cartafueUsada2 = !cartafueUsada2;
+        cardOrange2.gameObject.SetActive(cartafueUsada2);
 
     }
     public void activaryDesactivarCartaAlUsarlaSlot3()
     {
-        cartafueUsada = !cartafueUsada;
-        cardOrange3.gameObject.SetActive(cartafueUsada);
+        cartafueUsada3 = !cartafueUsada3;
+        cardOrange3.gameObject.SetActive(cartafueUsada3);
 
     }
     public void setenemy(Enemy enemy)
@@ -98,11 +100,11 @@ public class Combat : MonoBehaviour
             {
                 activaryDesactivarCartaAlUsarlaSlot1();
             }
-            if (cartafueUsada == false)
+            if (cartafueUsada2 == false)
             {
                 activaryDesactivarCartaAlUsarlaSlot2();
             }
-            if (cartafueUsada == false)
+            if (cartafueUsada3 == false)
             {
                 activaryDesactivarCartaAlUsarlaSlot3();
             }
