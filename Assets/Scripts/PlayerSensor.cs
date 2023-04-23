@@ -33,20 +33,7 @@ public class PlayerSensor : MonoBehaviour
         }
     }
 
-    //private void OnTriggerStay(Collider other)
-    //{
-    //    DoorContador -= 1 * Time.deltaTime;
-
-    //    if (DoorContador <= 0)
-    //    {
-    //        playerColl.enabled = false;
-    //        player.enabled = true;
-    //        playerRB.constraints = RigidbodyConstraints.None;
-    //        playerRB.constraints = RigidbodyConstraints.FreezeRotation;
-    //        SwitchCameraDoor(CamarasDoor[0]);
-    //        EV_OnPlayerExit.Invoke();
-    //    }
-    //}
+    
    
     public void SwitchCameraDoor(CinemachineVirtualCamera Door)
     {

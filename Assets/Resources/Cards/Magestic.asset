@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Magestic
   description: An elegant spell
-  image: {fileID: 21300000, guid: bad392da5e396f4449e319b46fd2e9c0, type: 3}
+  image: {fileID: 21300000, guid: 1ddd392f62f79b845838435086191807, type: 3}
   vigorcost: 3
   attack: 3

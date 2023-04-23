@@ -9,11 +9,7 @@ public class inventoryObjectsActions : MonoBehaviour
     
     public Camera mainCamera;
     [SerializeField] LayerMask doormask;
-    private void Update()
-    {
-
-
-    }
+    
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.layer == 6)
