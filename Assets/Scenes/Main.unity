@@ -5142,7 +5142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SeleccionarCartas: {fileID: 0}
+  SeleccionarCartas: {fileID: 1298148219}
 --- !u!114 &1248712717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7057,7 +7057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SeleccionarCartas: {fileID: 0}
+  SeleccionarCartas: {fileID: 1298148219}
 --- !u!114 &1897917466
 MonoBehaviour:
   m_ObjectHideFlags: 0

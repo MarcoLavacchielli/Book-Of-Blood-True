@@ -21,7 +21,7 @@ public class EnemyAldeano : Enemy
     public void BasicDamage()
     {
         player.PlayerHealth -= 2;
-        Debug.Log("El enemigo inflingio 2 de daño al jugador");
+        Debug.Log("El enemigo inflingio 2 de daño al jugador con un ataque basico");
     }
     public void HeavyDamage()
     {

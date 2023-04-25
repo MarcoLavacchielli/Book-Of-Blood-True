@@ -22,7 +22,7 @@ public class EnemyTank : Enemy
     public void BasicDamage()
     {
         player.PlayerHealth -= 4;
-        Debug.Log("El enemigo inflingio 4 de daño al jugador");
+        Debug.Log("El enemigo inflingio 4 de daño al jugador con un ataque basico");
     }
     public void HeavyDamage()
     {
