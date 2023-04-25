@@ -12,11 +12,14 @@ public class CardDisplay : MonoBehaviour
     public Text nametext;
     public Text descriptiontext;
     public Image image;
-    public Text vigortext;
+    
     public Text attacktext;
     public Deck scriptdeck;
     public int myslot;
     public int attackdmg;
+
+    public string NombredelaCartayEjecutarPasiva;
+    public Player player;
 
     private void Start()
     {
@@ -24,7 +27,7 @@ public class CardDisplay : MonoBehaviour
         nametext.text = card.name;
         descriptiontext.text = card.description;
         image.sprite = card.image;
-        vigortext.text = card.vigorcost.ToString();
+       
         attacktext.text = card.attack.ToString();
        
     }
@@ -51,8 +54,28 @@ public class CardDisplay : MonoBehaviour
         nametext.text = card.name;
         descriptiontext.text = card.description;
         image.sprite = card.image;
-        vigortext.text = card.vigorcost.ToString();
+        
         attacktext.text = card.attack.ToString();
+    }
+
+    public void ejecutarpasivadelacarta()
+    {
+        NombredelaCartayEjecutarPasiva = card.name;
+        /*if(NombredelaCartayEjecutarPasiva=="Sacred Font")
+        {
+            player.PlayerHealth += 5;
+            Debug.Log("te has curado 5 puntos de salud");
+
+        }*/
+        switch (NombredelaCartayEjecutarPasiva)
+        {
+            case "Sacred Font":
+                player.PlayerHealth += 5;
+                Debug.Log("te has curado 5 puntos de salud");
+                break;
+           
+        }
+
     }
     
 }

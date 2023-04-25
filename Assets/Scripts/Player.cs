@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
     public CharacterController player;
     public float playerspeed;
     public int PlayerHealth = 30;
+    public int vigorPoints = 40;
     public float gravity = 9.8f;
     
     private void Start()

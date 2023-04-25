@@ -31,6 +31,7 @@ public class CombatPosition : MonoBehaviour
  
     public void salircombate()
     {
+        player.vigorPoints = 40;
         enemiesreminder--;
         if (enemiesreminder <= 0)
         {
@@ -53,6 +54,7 @@ public class CombatPosition : MonoBehaviour
 
     public void combatON()
     {
+        player.vigorPoints = 40;
         Cursor.lockState = CursorLockMode.Confined;
         SwitchCamera(cameras[1]);
         battlePosition = true;

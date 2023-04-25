@@ -6,15 +6,18 @@ using UnityEngine.UI;
 public class Combat : MonoBehaviour
 {
     private Player player;
+<<<<<<< Updated upstream
     public ParticleSystem damageParticles;
     public ParticleSystem damageParticlesSlot2;
     public ParticleSystem damageParticlesSlot3;
+=======
+    //int contador;
+>>>>>>> Stashed changes
     //public EnemyAldeano enemyaldean;
     public Enemy enemyy;
-    private CombatPosition combat;
-    private bool combatmode = false;
+    //private CombatPosition combat;
+    //private bool combatmode = false;
     int playercontador;
-    int contador;
     public Deck deckscript;
     public CardDisplay carddisplayscriptinSlot1;
     public CardDisplay carddisplayscriptinSlot2;
@@ -29,6 +32,20 @@ public class Combat : MonoBehaviour
     private bool cartafueUsada2 = true;
     private bool cartafueUsada3 = true;
     private bool enemyattack = false;
+
+    public VigorCardsDisplay carddisplayscriptinSlot4;
+    public VigorCardsDisplay carddisplayscriptinSlot5;
+    public VigorCardsDisplay carddisplayscriptinSlot6;
+    public Image cardOrange4;
+    public Image cardOrange5;
+    public Image cardOrange6;
+    public Button button4;
+    public Button button5;
+    public Button button6;
+    private bool cartafueUsada4 = true;
+    private bool cartafueUsada5 = true;
+    private bool cartafueUsada6 = true;
+    public VigorDeck VigorDeckScript;
 
     public object WaitForSeconds3 { get; private set; }
 
@@ -51,6 +68,7 @@ public class Combat : MonoBehaviour
     {
         Enemydealsdamage();
     }
+
     public void activaryDesactivarCartaAlUsarlaSlot1()
     {
         cartafueUsada = !cartafueUsada;
@@ -69,6 +87,26 @@ public class Combat : MonoBehaviour
         cardOrange3.gameObject.SetActive(cartafueUsada3);
 
     }
+
+    public void activaryDesactivarCartaAlUsarlaSlot4()
+    {
+        cartafueUsada4 = !cartafueUsada4;
+        cardOrange4.gameObject.SetActive(cartafueUsada4);
+
+    }
+    public void activaryDesactivarCartaAlUsarlaSlot5()
+    {
+        cartafueUsada5 = !cartafueUsada5;
+        cardOrange5.gameObject.SetActive(cartafueUsada5);
+
+    }
+    public void activaryDesactivarCartaAlUsarlaSlot6()
+    {
+        cartafueUsada6 = !cartafueUsada6;
+        cardOrange6.gameObject.SetActive(cartafueUsada6);
+
+    }
+
     public void setenemy(Enemy enemy)
     {
         enemyy = enemy;
@@ -84,10 +122,10 @@ public class Combat : MonoBehaviour
 
         }
     }*/
-    public void combatmodeON()
+    /*public void combatmodeON()
     {
         combatmode = true;
-    }
+    }*/
     public void Enemydealsdamage()
     {
         if (Input.GetKeyDown(KeyCode.Space) && enemyattack == true)
@@ -95,10 +133,15 @@ public class Combat : MonoBehaviour
             button1.interactable = true;
             button2.interactable = true;
             button3.interactable = true;
+            button4.interactable = true;
+            button5.interactable = true;
+            button6.interactable = true;
             enemyy.Enemyturn();
             //contador = 0;
             playercontador = 0;
             deckscript.DrawCards();
+            VigorDeckScript.DrawCards();
+
             if (cartafueUsada == false)
             {
                 activaryDesactivarCartaAlUsarlaSlot1();
@@ -111,6 +154,18 @@ public class Combat : MonoBehaviour
             {
                 activaryDesactivarCartaAlUsarlaSlot3();
             }
+            if (cartafueUsada4 == false)
+            {
+                activaryDesactivarCartaAlUsarlaSlot4();
+            }
+            if (cartafueUsada5 == false)
+            {
+                activaryDesactivarCartaAlUsarlaSlot5();
+            }
+            if (cartafueUsada6 == false)
+            {
+                activaryDesactivarCartaAlUsarlaSlot6();
+            }
             enemyattack = false;
         }
     }
@@ -121,7 +176,11 @@ public class Combat : MonoBehaviour
             deckscript.SlotBool1 = false;
             int carddmgtrue = carddisplayscriptinSlot1.Thecarddmg();
             enemyy.health -= carddmgtrue;
+<<<<<<< Updated upstream
             damageParticles.Play();
+=======
+            carddisplayscriptinSlot1.ejecutarpasivadelacarta();
+>>>>>>> Stashed changes
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
@@ -139,7 +198,11 @@ public class Combat : MonoBehaviour
             deckscript.SlotBool2 = false;
             int carddmgtrue = carddisplayscriptinSlot2.Thecarddmg();
             enemyy.health -= carddmgtrue;
+<<<<<<< Updated upstream
             damageParticlesSlot2.Play();
+=======
+            carddisplayscriptinSlot2.ejecutarpasivadelacarta();
+>>>>>>> Stashed changes
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
@@ -156,7 +219,11 @@ public class Combat : MonoBehaviour
             deckscript.SlotBool3 = false;
             int carddmgtrue = carddisplayscriptinSlot3.Thecarddmg();
             enemyy.health -= carddmgtrue;
+<<<<<<< Updated upstream
             damageParticlesSlot3.Play();
+=======
+            carddisplayscriptinSlot3.ejecutarpasivadelacarta();
+>>>>>>> Stashed changes
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
@@ -164,6 +231,39 @@ public class Combat : MonoBehaviour
             playercontador = 1;
             activaryDesactivarCartaAlUsarlaSlot3();
             button3.interactable = false;
+        }
+    }
+    public void clickonslotfour()
+    {
+        if (player.vigorPoints>=carddisplayscriptinSlot4.thevigorCostOfMyCard)
+        {
+            carddisplayscriptinSlot4.ejecutarpasivadelacartadevigor();
+            VigorDeckScript.SlotBool4 = false;
+            Debug.Log("restan " + player.vigorPoints + " puntos de vigor");
+            activaryDesactivarCartaAlUsarlaSlot4();
+            button4.interactable = false;
+        }
+    }
+    public void clickonslotfive()
+    {
+        if (player.vigorPoints >= carddisplayscriptinSlot5.thevigorCostOfMyCard)
+        {
+            carddisplayscriptinSlot5.ejecutarpasivadelacartadevigor();
+            VigorDeckScript.SlotBool5 = false;
+            Debug.Log("restan " + player.vigorPoints + " puntos de vigor");
+            activaryDesactivarCartaAlUsarlaSlot5();
+            button5.interactable = false;
+        }
+    }
+    public void clickonslotsix()
+    {
+        if (player.vigorPoints >= carddisplayscriptinSlot6.thevigorCostOfMyCard)
+        {
+            carddisplayscriptinSlot6.ejecutarpasivadelacartadevigor();
+            VigorDeckScript.SlotBool6 = false;
+            Debug.Log("restan " + player.vigorPoints + " puntos de vigor");
+            activaryDesactivarCartaAlUsarlaSlot6();
+            button6.interactable = false;
         }
     }
 }
