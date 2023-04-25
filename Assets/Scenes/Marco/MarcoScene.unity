@@ -1319,6 +1319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SeleccionarCartas: {fileID: 0}
 --- !u!1 &588973374
 GameObject:
   m_ObjectHideFlags: 0
@@ -2339,6 +2340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SeleccionarCartas: {fileID: 0}
 --- !u!1 &941509213
 GameObject:
   m_ObjectHideFlags: 0
@@ -3654,11 +3656,12 @@ MonoBehaviour:
   nametext: {fileID: 1361012803}
   descriptiontext: {fileID: 733884832}
   image: {fileID: 1082629061}
-  vigortext: {fileID: 1757216050}
   attacktext: {fileID: 1831010097}
   scriptdeck: {fileID: 1950983790}
   myslot: 2
   attackdmg: 0
+  NombredelaCartayEjecutarPasiva: 
+  player: {fileID: 0}
 --- !u!114 &1581599282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4119,6 +4122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SeleccionarCartas: {fileID: 0}
 --- !u!1 &1757216048
 GameObject:
   m_ObjectHideFlags: 0
@@ -4377,11 +4381,12 @@ MonoBehaviour:
   nametext: {fileID: 165223965}
   descriptiontext: {fileID: 1203272467}
   image: {fileID: 898763190}
-  vigortext: {fileID: 270229221}
   attacktext: {fileID: 361411763}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
+  NombredelaCartayEjecutarPasiva: 
+  player: {fileID: 0}
 --- !u!114 &1950983790 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
@@ -5158,11 +5163,12 @@ MonoBehaviour:
   nametext: {fileID: 894611642}
   descriptiontext: {fileID: 806281881}
   image: {fileID: 795272821}
-  vigortext: {fileID: 941509215}
   attacktext: {fileID: 24151349}
   scriptdeck: {fileID: 1950983790}
   myslot: 3
   attackdmg: 0
+  NombredelaCartayEjecutarPasiva: 
+  player: {fileID: 0}
 --- !u!114 &2144618736
 MonoBehaviour:
   m_ObjectHideFlags: 0

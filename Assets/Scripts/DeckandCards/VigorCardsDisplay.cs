@@ -11,6 +11,7 @@ public class VigorCardsDisplay : MonoBehaviour
     public Image image;
 
     public Text vigortext;
+    public VigorDeck vigorscriptdeck;
     public int myslot;
     public int thevigorCostOfMyCard;
 
@@ -27,10 +28,6 @@ public class VigorCardsDisplay : MonoBehaviour
         vigortext.text = card.vigorcost.ToString();
         thevigorCostOfMyCard = card.vigorcost;
 
-    }
-    public void Update()
-    {
-        thevigorCostOfMyCard = card.vigorcost;
     }
     public void actualizarinfodeUIdeCadaCarta()
     {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -263,10 +263,11 @@ MonoBehaviour:
   descriptiontext: {fileID: 1175659022}
   image: {fileID: 1879049560}
   vigortext: {fileID: 35402785}
-  myslot: 0
+  vigorscriptdeck: {fileID: 2034795150}
+  myslot: 5
   thevigorCostOfMyCard: 0
   NombredelaCartadeVigoryEjecutarPasiva: 
-  player: {fileID: 1393160489}
+  player: {fileID: 0}
 --- !u!114 &29717457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,10 +925,11 @@ MonoBehaviour:
   descriptiontext: {fileID: 920674896}
   image: {fileID: 479279379}
   vigortext: {fileID: 776188794}
-  myslot: 0
+  vigorscriptdeck: {fileID: 2034795150}
+  myslot: 4
   thevigorCostOfMyCard: 0
   NombredelaCartadeVigoryEjecutarPasiva: 
-  player: {fileID: 1393160489}
+  player: {fileID: 0}
 --- !u!114 &200995805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,10 +1028,11 @@ MonoBehaviour:
   descriptiontext: {fileID: 601717912}
   image: {fileID: 305855166}
   vigortext: {fileID: 526922935}
-  myslot: 0
+  vigorscriptdeck: {fileID: 2034795150}
+  myslot: 6
   thevigorCostOfMyCard: 0
   NombredelaCartadeVigoryEjecutarPasiva: 
-  player: {fileID: 1393160489}
+  player: {fileID: 0}
 --- !u!114 &256322633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1180,7 +1183,7 @@ RectTransform:
   m_Children:
   - {fileID: 991716290}
   m_Father: {fileID: 613998378}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1825,9 +1828,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1393160490}
         m_TargetAssemblyTypeName: Combat, Assembly-CSharp
-        m_MethodName: clickonslotfour
+        m_MethodName: activaryDesactivarCartaAlUsarlaSlot4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2448,6 +2451,7 @@ GameObject:
   - component: {fileID: 613998380}
   - component: {fileID: 613998379}
   - component: {fileID: 613998381}
+  - component: {fileID: 613998382}
   m_Layer: 5
   m_Name: combatUI
   m_TagString: Untagged
@@ -2467,12 +2471,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 737274272}
   - {fileID: 1036452869}
   - {fileID: 287092479}
   - {fileID: 709737373}
   - {fileID: 1494897267}
   - {fileID: 1434052278}
+  - {fileID: 737274272}
   m_Father: {fileID: 1954190898}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2545,6 +2549,28 @@ MonoBehaviour:
   SlotBool1: 0
   SlotBool2: 0
   SlotBool3: 0
+--- !u!114 &613998382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613998377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c77a0e4092ed349ac62f62d597fa4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deck:
+  - {fileID: 11400000, guid: 56a3a760cde64fb4993811e70f1c0a4f, type: 2}
+  - {fileID: 11400000, guid: aecf45d6a9c991e4ab801d60a5ec531a, type: 2}
+  - {fileID: 11400000, guid: e94580e23d5643f409d08f484781ac8b, type: 2}
+  Slot4: {fileID: 0}
+  Slot5: {fileID: 0}
+  Slot6: {fileID: 0}
+  SlotBool4: 0
+  SlotBool5: 0
+  SlotBool6: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2671,7 +2697,7 @@ RectTransform:
   m_Children:
   - {fileID: 328828943}
   m_Father: {fileID: 613998378}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -2829,7 +2855,7 @@ RectTransform:
   - {fileID: 1897917462}
   - {fileID: 1248712713}
   m_Father: {fileID: 613998378}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4002,7 +4028,7 @@ RectTransform:
   m_Children:
   - {fileID: 588973375}
   m_Father: {fileID: 613998378}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -4666,9 +4692,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1393160490}
         m_TargetAssemblyTypeName: Combat, Assembly-CSharp
-        m_MethodName: clickonslotsix
+        m_MethodName: activaryDesactivarCartaAlUsarlaSlot6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5122,7 +5148,7 @@ RectTransform:
   - {fileID: 576756648}
   - {fileID: 1729719323}
   m_Father: {fileID: 613998378}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5187,7 +5213,7 @@ RectTransform:
   m_Children:
   - {fileID: 1309721070}
   m_Father: {fileID: 613998378}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -6467,9 +6493,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1393160490}
         m_TargetAssemblyTypeName: Combat, Assembly-CSharp
-        m_MethodName: clickonslotfive
+        m_MethodName: activaryDesactivarCartaAlUsarlaSlot5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6948,6 +6974,17 @@ Transform:
   m_Father: {fileID: 1525994596}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &2034795150 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+  m_PrefabInstance: {fileID: 8077958658333811773}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c77a0e4092ed349ac62f62d597fa4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2040130640
 GameObject:
   m_ObjectHideFlags: 0
@@ -7645,6 +7682,18 @@ PrefabInstance:
       propertyPath: oftheareaWhereTheEnemySpawns
       value: 
       objectReference: {fileID: 2092601330}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: Slot4
+      value: 
+      objectReference: {fileID: 200995804}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: Slot5
+      value: 
+      objectReference: {fileID: 29717456}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: Slot6
+      value: 
+      objectReference: {fileID: 256322632}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: player
       value: 
@@ -7662,6 +7711,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1729719324}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: button4
+      value: 
+      objectReference: {fileID: 506857994}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: button5
+      value: 
+      objectReference: {fileID: 1897917466}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: button6
+      value: 
+      objectReference: {fileID: 1248712717}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: cardOrange1
       value: 
       objectReference: {fileID: 1909126499}
@@ -7674,6 +7735,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2144618736}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardOrange4
+      value: 
+      objectReference: {fileID: 479279379}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardOrange5
+      value: 
+      objectReference: {fileID: 1879049560}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardOrange6
+      value: 
+      objectReference: {fileID: 305855166}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: carddisplayscriptinSlot1
       value: 
       objectReference: {fileID: 1909126501}
@@ -7685,6 +7758,18 @@ PrefabInstance:
       propertyPath: carddisplayscriptinSlot3
       value: 
       objectReference: {fileID: 2144618735}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: carddisplayscriptinSlot4
+      value: 
+      objectReference: {fileID: 200995804}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: carddisplayscriptinSlot5
+      value: 
+      objectReference: {fileID: 29717456}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: carddisplayscriptinSlot6
+      value: 
+      objectReference: {fileID: 256322632}
     - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: Slot1
       value: 
@@ -7697,6 +7782,10 @@ PrefabInstance:
       propertyPath: Slot3
       value: 
       objectReference: {fileID: 2144618735}
+    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: _deck.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_RootOrder
       value: 2

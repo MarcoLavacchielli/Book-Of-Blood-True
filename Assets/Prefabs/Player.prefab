@@ -340,7 +340,7 @@ MonoBehaviour:
   button4: {fileID: 0}
   button5: {fileID: 0}
   button6: {fileID: 0}
-  VigorDeckScript: {fileID: 0}
+  VigorDeckScript: {fileID: 5712986794260492655}
 --- !u!114 &7910656068851151482
 MonoBehaviour:
   m_ObjectHideFlags: 0
