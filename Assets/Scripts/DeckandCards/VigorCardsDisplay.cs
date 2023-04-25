@@ -37,6 +37,11 @@ public class VigorCardsDisplay : MonoBehaviour
 
         vigortext.text = card.vigorcost.ToString();
     }
+    public int actualizarinformacióncostedeVigor()
+    {
+        thevigorCostOfMyCard = card.vigorcost;
+        return (thevigorCostOfMyCard);
+    }
     public void ejecutarpasivadelacartadevigor()
     {
         NombredelaCartadeVigoryEjecutarPasiva = card.name;

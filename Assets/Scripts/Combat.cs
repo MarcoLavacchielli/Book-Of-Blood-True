@@ -223,31 +223,34 @@ public class Combat : MonoBehaviour
     }
     public void clickonslotfour()
     {
-        if (player.vigorPoints >= carddisplayscriptinSlot4.thevigorCostOfMyCard)
+        if (player.vigorPoints >= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor())
         {
+            player.vigorPoints -= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor();
             carddisplayscriptinSlot4.ejecutarpasivadelacartadevigor();
+            activaryDesactivarCartaAlUsarlaSlot4();
+            button4.interactable = false;
             VigorDeckScript.SlotBool4 = false;
             damageparticleSlot4.Play();
             Debug.Log("restan " + player.vigorPoints + " puntos de vigor");
-            activaryDesactivarCartaAlUsarlaSlot4();
-            button4.interactable = false;
         }
     }
     public void clickonslotfive()
     {
-        if (player.vigorPoints >= carddisplayscriptinSlot5.thevigorCostOfMyCard)
+        if (player.vigorPoints >= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor())
         {
+            player.vigorPoints -= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor();
             carddisplayscriptinSlot5.ejecutarpasivadelacartadevigor();
-            VigorDeckScript.SlotBool5 = false;
-            Debug.Log("restan " + player.vigorPoints + " puntos de vigor");
             activaryDesactivarCartaAlUsarlaSlot5();
             button5.interactable = false;
+            VigorDeckScript.SlotBool5 = false;
+            Debug.Log("restan " + player.vigorPoints + " puntos de vigor");
         }
     }
     public void clickonslotsix()
     {
-        if (player.vigorPoints >= carddisplayscriptinSlot6.thevigorCostOfMyCard)
+        if (player.vigorPoints >= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor())
         {
+            player.vigorPoints -= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor();
             carddisplayscriptinSlot6.ejecutarpasivadelacartadevigor();
             VigorDeckScript.SlotBool6 = false;
             Debug.Log("restan " + player.vigorPoints + " puntos de vigor");
