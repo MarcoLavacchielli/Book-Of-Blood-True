@@ -1349,6 +1349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SeleccionarCartas: {fileID: 0}
 --- !u!114 &489295347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,6 +1768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SeleccionarCartas: {fileID: 0}
 --- !u!1 &588973374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,6 +3172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SeleccionarCartas: {fileID: 0}
 --- !u!1 &931347951
 GameObject:
   m_ObjectHideFlags: 0
@@ -5571,6 +5574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SeleccionarCartas: {fileID: 0}
 --- !u!114 &1720572830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5892,6 +5896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SeleccionarCartas: {fileID: 0}
 --- !u!1 &1781502556
 GameObject:
   m_ObjectHideFlags: 0
@@ -6180,10 +6185,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _deck:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 56a3a760cde64fb4993811e70f1c0a4f, type: 2}
+  - {fileID: 11400000, guid: e94580e23d5643f409d08f484781ac8b, type: 2}
+  - {fileID: 11400000, guid: aecf45d6a9c991e4ab801d60a5ec531a, type: 2}
+  - {fileID: 11400000, guid: 56a3a760cde64fb4993811e70f1c0a4f, type: 2}
   Slot4: {fileID: 1622730602}
   Slot5: {fileID: 984411065}
   Slot6: {fileID: 365541192}
@@ -6537,6 +6542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SeleccionarCartas: {fileID: 0}
 --- !u!114 &1989354596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7441,6 +7447,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1729719324}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: button4
+      value: 
+      objectReference: {fileID: 1989354596}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: button5
+      value: 
+      objectReference: {fileID: 1720572830}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: button6
+      value: 
+      objectReference: {fileID: 489295347}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: cardOrange1
       value: 
       objectReference: {fileID: 1909126499}
@@ -7453,6 +7471,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2144618736}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardOrange4
+      value: 
+      objectReference: {fileID: 1622730600}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardOrange5
+      value: 
+      objectReference: {fileID: 984411063}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardOrange6
+      value: 
+      objectReference: {fileID: 365541190}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: VigorDeckScript
+      value: 
+      objectReference: {fileID: 1950983800}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: carddisplayscriptinSlot1
       value: 
       objectReference: {fileID: 1909126501}
@@ -7464,6 +7498,18 @@ PrefabInstance:
       propertyPath: carddisplayscriptinSlot3
       value: 
       objectReference: {fileID: 2144618735}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: carddisplayscriptinSlot4
+      value: 
+      objectReference: {fileID: 1622730602}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: carddisplayscriptinSlot5
+      value: 
+      objectReference: {fileID: 984411065}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: carddisplayscriptinSlot6
+      value: 
+      objectReference: {fileID: 365541192}
     - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: Slot1
       value: 

@@ -28,6 +28,10 @@ public class VigorCardsDisplay : MonoBehaviour
         thevigorCostOfMyCard = card.vigorcost;
 
     }
+    public void Update()
+    {
+        thevigorCostOfMyCard = card.vigorcost;
+    }
     public void actualizarinfodeUIdeCadaCarta()
     {
         nametext.text = card.name;
