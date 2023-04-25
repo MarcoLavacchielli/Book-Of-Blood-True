@@ -9,6 +9,7 @@ public class Combat : MonoBehaviour
     public ParticleSystem damageParticleSlot1;
     public ParticleSystem damageParticleSlot2;
     public ParticleSystem damageParticleSlot3;
+    public ParticleSystem damageparticleSlot4;
     //int contador;
     //public EnemyAldeano enemyaldean;
     public Enemy enemyy;
@@ -227,6 +228,7 @@ public class Combat : MonoBehaviour
         {
             carddisplayscriptinSlot4.ejecutarpasivadelacartadevigor();
             VigorDeckScript.SlotBool4 = false;
+            damageparticleSlot4.Play();
             Debug.Log("restan " + player.vigorPoints + " puntos de vigor");
             activaryDesactivarCartaAlUsarlaSlot4();
             button4.interactable = false;

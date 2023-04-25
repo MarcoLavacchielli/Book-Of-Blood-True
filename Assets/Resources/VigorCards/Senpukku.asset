@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f42e8829653e1c4dbfaf5c502342e4a, type: 3}
   m_Name: Senpukku
   m_EditorClassIdentifier: 
-  name: Senpukku
+  name: Sepukku
   description: if your health is below 5 deal 7 of damage to an enemy
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 758fc3b73120a084d9e880f75103e25e, type: 3}
   vigorcost: 4
