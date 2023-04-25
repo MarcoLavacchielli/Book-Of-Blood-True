@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    
     public Player player;
     public Combat combat;
     CombatPosition _combatposition;
@@ -31,6 +32,7 @@ public class Enemy : MonoBehaviour
     {
 
     }
+    
     public void Setcombat(CombatPosition combatPosition)
     {
         _combatposition = combatPosition;

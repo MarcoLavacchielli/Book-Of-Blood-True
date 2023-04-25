@@ -7,6 +7,7 @@ using Cinemachine;
 public class CombatPosition : MonoBehaviour
 {
     //public EnemyAldeano enemyAldean;
+    public ParticleSystem ParticulasAmarillas;
     public Enemy enemyy;
     public Combat combatscript;
     public List<GameObject> enemyGObj;
@@ -42,9 +43,11 @@ public class CombatPosition : MonoBehaviour
             player.enabled = true;
             playerRB.constraints = RigidbodyConstraints.None;
             playerRB.constraints = RigidbodyConstraints.FreezeRotation;
+            ParticulasAmarillas.Stop();
             Debug.Log("Saliste del combate");
             //playerRB.freezeRotation = false;
             //player.enabled = true;
+            
         }
     }
 
