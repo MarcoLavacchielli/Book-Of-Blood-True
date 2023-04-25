@@ -288,7 +288,10 @@ MonoBehaviour:
   ParticulasAmarillas: {fileID: 0}
   enemyy: {fileID: 0}
   combatscript: {fileID: 5790167006782233436}
-  enemyGObj: []
+  enemyGObj:
+  - {fileID: 8249360497324799467, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
+  - {fileID: 9148108138305623921, guid: f48e16e993e77d7409de9b981332246b, type: 3}
+  - {fileID: 8002182297442336969, guid: d2c87c82d0dfee14c8f6e3596ff8f8b4, type: 3}
   enemytransf: {fileID: 8249360497324799471, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
   areaWhereTheEnemySpawns: {fileID: 0}
   battlePosition: 0

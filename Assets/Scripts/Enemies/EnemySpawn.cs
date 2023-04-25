@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
-    public ParticleSystem ParticulasAmarillas;
-    public Enemy enemyy;
+    /*public Enemy enemyy;
     public Combat combatscript;
     public CombatPosition combatpositionscript;
     public List<GameObject> enemyGObj;
@@ -26,5 +25,5 @@ public class EnemySpawn : MonoBehaviour
             Destroy(areaWhereTheEnemySpawns.gameObject);
             combatpositionscript.combatON();
         }
-    }
+    }*/
 }
