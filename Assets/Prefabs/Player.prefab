@@ -285,13 +285,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7864799debd9f1f49a415e9631e6210e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ParticulasAmarillas: {fileID: 0}
+  ParticulasAmarillas: {fileID: 8060869572916255339, guid: 45fab5533b171c84eafdfbc1ee43d0fb, type: 3}
   enemyy: {fileID: 0}
   combatscript: {fileID: 5790167006782233436}
   enemyGObj:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8249360497324799467, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
   enemytransf: {fileID: 8249360497324799471, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
   areaWhereTheEnemySpawns: {fileID: 0}
   battlePosition: 0
@@ -304,6 +302,7 @@ MonoBehaviour:
   ActiveCamera: {fileID: 0}
   camerascript: {fileID: 0}
   deckscript: {fileID: 7910656068851151482}
+  vigordeckscript: {fileID: 5712986794260492655}
 --- !u!114 &5790167006782233436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,27 +315,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75fb82f03a3d5846b756eb4c4bfd576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageParticleSlot1: {fileID: 0}
-  damageParticleSlot2: {fileID: 0}
-  damageParticleSlot3: {fileID: 0}
-  damageparticleSlot4: {fileID: 0}
+  damageParticleSlot1: {fileID: 8326400024902863589, guid: b0bf82bf5037e9c43b4009f16840089f, type: 3}
+  damageParticleSlot2: {fileID: 5568701411491732272, guid: 6690773f2648f8e418eee6fa7461dae7, type: 3}
+  damageParticleSlot3: {fileID: 7012167915347703447, guid: 3c73c58e5d8f33e41aef6fef7196d195, type: 3}
+  damageparticleSlot4: {fileID: 4187415657898623779, guid: 807ceac3da28afc47a42dafeea4a2a9a, type: 3}
   enemyy: {fileID: 0}
   deckscript: {fileID: 7910656068851151482}
   carddisplayscriptinSlot1: {fileID: 0}
   carddisplayscriptinSlot2: {fileID: 0}
   carddisplayscriptinSlot3: {fileID: 0}
-  cardOrange1: {fileID: 0}
-  cardOrange2: {fileID: 0}
-  cardOrange3: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
   carddisplayscriptinSlot4: {fileID: 0}
   carddisplayscriptinSlot5: {fileID: 0}
   carddisplayscriptinSlot6: {fileID: 0}
+  cardOrange1: {fileID: 0}
+  cardOrange2: {fileID: 0}
+  cardOrange3: {fileID: 0}
   cardOrange4: {fileID: 0}
   cardOrange5: {fileID: 0}
   cardOrange6: {fileID: 0}
+  button1: {fileID: 0}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   button4: {fileID: 0}
   button5: {fileID: 0}
   button6: {fileID: 0}
