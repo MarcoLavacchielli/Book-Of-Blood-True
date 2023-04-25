@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 5299470838625391949}
   - component: {fileID: 5790167006782233436}
   - component: {fileID: 7910656068851151482}
+  - component: {fileID: 5712986794260492655}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -205,6 +206,7 @@ MonoBehaviour:
   player: {fileID: 2164653984255317432}
   playerspeed: 5
   PlayerHealth: 30
+  vigorPoints: 40
   gravity: 9.8
 --- !u!54 &8077958657708868332
 Rigidbody:
@@ -283,6 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7864799debd9f1f49a415e9631e6210e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticulasAmarillas: {fileID: 0}
   enemyy: {fileID: 0}
   combatscript: {fileID: 5790167006782233436}
   enemyGObj:
@@ -313,6 +316,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75fb82f03a3d5846b756eb4c4bfd576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageParticleSlot1: {fileID: 0}
+  damageParticleSlot2: {fileID: 0}
+  damageParticleSlot3: {fileID: 0}
+  damageparticleSlot4: {fileID: 0}
   enemyy: {fileID: 0}
   deckscript: {fileID: 7910656068851151482}
   carddisplayscriptinSlot1: {fileID: 0}
@@ -324,6 +331,16 @@ MonoBehaviour:
   button1: {fileID: 0}
   button2: {fileID: 0}
   button3: {fileID: 0}
+  carddisplayscriptinSlot4: {fileID: 0}
+  carddisplayscriptinSlot5: {fileID: 0}
+  carddisplayscriptinSlot6: {fileID: 0}
+  cardOrange4: {fileID: 0}
+  cardOrange5: {fileID: 0}
+  cardOrange6: {fileID: 0}
+  button4: {fileID: 0}
+  button5: {fileID: 0}
+  button6: {fileID: 0}
+  VigorDeckScript: {fileID: 0}
 --- !u!114 &7910656068851151482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +360,25 @@ MonoBehaviour:
   SlotBool1: 0
   SlotBool2: 0
   SlotBool3: 0
+--- !u!114 &5712986794260492655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8077958657708868338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c77a0e4092ed349ac62f62d597fa4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deck: []
+  Slot4: {fileID: 0}
+  Slot5: {fileID: 0}
+  Slot6: {fileID: 0}
+  SlotBool4: 0
+  SlotBool5: 0
+  SlotBool6: 0
 --- !u!1 &8077958658602386710
 GameObject:
   m_ObjectHideFlags: 0

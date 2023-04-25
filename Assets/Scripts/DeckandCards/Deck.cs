@@ -5,17 +5,6 @@ using UnityEngine.UI;
 
 public class Deck : MonoBehaviour
 {
-    //public ScriptableObject[] _deck;
-    /*private void Start()
-    {
-        //quiero llamar a las carpeta Cards de los assets para llenar el array y no puedo.
-        //_deck = ScriptableObject.FindObjectsOfTypeIncludingAssets(Cards);
-        
-
-
-    }*/
-
-    //public List<Card> _deck = new List<Card>(4);
     public Card[] _deck;
     private int availableCardSlots = 3;
     public CardDisplay Slot1;
