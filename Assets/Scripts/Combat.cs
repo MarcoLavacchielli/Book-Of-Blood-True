@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class Combat : MonoBehaviour
 {
     private Player player;
+    public ParticleSystem damageParticleSlot1;
+    public ParticleSystem damageParticleSlot2;
+    public ParticleSystem damageParticleSlot3;
     //int contador;
     //public EnemyAldeano enemyaldean;
     public Enemy enemyy;
@@ -171,6 +174,7 @@ public class Combat : MonoBehaviour
             int carddmgtrue = carddisplayscriptinSlot1.Thecarddmg();
             enemyy.health -= carddmgtrue;
             carddisplayscriptinSlot1.ejecutarpasivadelacarta();
+            damageParticleSlot1.Play();
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
@@ -189,6 +193,7 @@ public class Combat : MonoBehaviour
             int carddmgtrue = carddisplayscriptinSlot2.Thecarddmg();
             enemyy.health -= carddmgtrue;
             carddisplayscriptinSlot2.ejecutarpasivadelacarta();
+            damageParticleSlot2.Play();
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
@@ -206,6 +211,7 @@ public class Combat : MonoBehaviour
             int carddmgtrue = carddisplayscriptinSlot3.Thecarddmg();
             enemyy.health -= carddmgtrue;
             carddisplayscriptinSlot3.ejecutarpasivadelacarta();
+            damageParticleSlot3.Play();
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
