@@ -23,6 +23,7 @@ public class CombatPosition : MonoBehaviour
     public MyCamera camerascript;
     int enemiesreminder;
     public Deck deckscript;
+    public VigorDeck vigordeckscript;
 
     public void Start()
     {
@@ -68,6 +69,8 @@ public class CombatPosition : MonoBehaviour
         //playerRB.freezeRotation = true;
         Debug.Log("entraste en combate");
         deckscript.DrawCards();
+        vigordeckscript.DrawCards();
+        
     }
     public void SwitchCamera(CinemachineVirtualCamera camera)
     {

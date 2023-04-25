@@ -20,29 +20,28 @@ public class Combat : MonoBehaviour
     public CardDisplay carddisplayscriptinSlot1;
     public CardDisplay carddisplayscriptinSlot2;
     public CardDisplay carddisplayscriptinSlot3;
-    public Image cardOrange1;
-    public Image cardOrange2;
-    public Image cardOrange3;
-    public Button button1;
-    public Button button2;
-    public Button button3;
-    private bool cartafueUsada = true;
-    private bool cartafueUsada2 = true;
-    private bool cartafueUsada3 = true;
-    private bool enemyattack = false;
-
     public VigorCardsDisplay carddisplayscriptinSlot4;
     public VigorCardsDisplay carddisplayscriptinSlot5;
     public VigorCardsDisplay carddisplayscriptinSlot6;
+    public Image cardOrange1;
+    public Image cardOrange2;
+    public Image cardOrange3;
     public Image cardOrange4;
     public Image cardOrange5;
     public Image cardOrange6;
+    public Button button1;
+    public Button button2;
+    public Button button3;
     public Button button4;
     public Button button5;
     public Button button6;
+    private bool cartafueUsada = true;
+    private bool cartafueUsada2 = true;
+    private bool cartafueUsada3 = true;
     private bool cartafueUsada4 = true;
     private bool cartafueUsada5 = true;
     private bool cartafueUsada6 = true;
+    private bool enemyattack = false;
     public VigorDeck VigorDeckScript;
 
     public object WaitForSeconds3 { get; private set; }
