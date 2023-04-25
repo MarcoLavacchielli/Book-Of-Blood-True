@@ -67,7 +67,7 @@ public class CombatPosition : MonoBehaviour
         mainCamera.transform.LookAt(enemytransf);
         playerRB.constraints = RigidbodyConstraints.FreezeAll;
         //playerRB.freezeRotation = true;
-        Debug.Log("entraste en combate");
+        Debug.Log("Entraste en combate");
         deckscript.DrawCards();
         vigordeckscript.DrawCards();
         

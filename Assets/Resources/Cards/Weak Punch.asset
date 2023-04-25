@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Weak Punch
   description: A really very weak punch
   image: {fileID: 21300000, guid: bad392da5e396f4449e319b46fd2e9c0, type: 3}
-  vigorcost: 0
-  attack: 1
+  vigorcost: 1
+  attack: 2

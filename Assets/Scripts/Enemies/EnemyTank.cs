@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EnemyTank : Enemy
 {
+    public override void Start()
+    {
+        base.Start();
+    }
     public void EnemyTurn()
     {
         if (health <= 20 && health > 15)

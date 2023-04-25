@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 public class EnemyAldeano : Enemy
 {
+    public override void Start()
+    {
+        base.Start();
+    }
     public override void Enemyturn()
     {
         if (health <= 10 && health > 8)

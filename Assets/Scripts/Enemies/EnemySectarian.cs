@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EnemySectarian : Enemy
 {
+    public override void Start()
+    {
+        base.Start();
+    }
     public void EnemyTurn()
     {
         if (health <= 15 && health > 11)

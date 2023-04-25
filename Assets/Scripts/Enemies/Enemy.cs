@@ -4,25 +4,18 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    
     public Player player;
     public Combat combat;
     CombatPosition _combatposition;
     public int health;
-    private void Start()
+    public string tipodeenemigo;
+    public virtual void Start()
     {
-        /*EnemyAldeano enemyaldeano = new EnemyAldeano();
-        enemyaldeano.health = 10;
-        enemyaldeano.Enemyturn();
-
-        EnemySectarian enemysectarian = new EnemySectarian();
-        enemysectarian.health = 15;
-        enemysectarian.EnemyTurn();
-
-        EnemyTank enemyTank = new EnemyTank();
-        enemyTank.health = 20;
-        enemyTank.EnemyTurn();*/
-
+        Enemyapears();
+    }
+    void Enemyapears()
+    {
+        Debug.Log("Aparecio un " + tipodeenemigo);
     }
     private void Update()
     {

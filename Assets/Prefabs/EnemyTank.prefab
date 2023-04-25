@@ -130,3 +130,4 @@ MonoBehaviour:
   player: {fileID: 0}
   combat: {fileID: 0}
   health: 20
+  tipodeenemigo: Tanque
