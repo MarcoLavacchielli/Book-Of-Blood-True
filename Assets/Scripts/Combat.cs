@@ -6,13 +6,7 @@ using UnityEngine.UI;
 public class Combat : MonoBehaviour
 {
     private Player player;
-<<<<<<< Updated upstream
-    public ParticleSystem damageParticles;
-    public ParticleSystem damageParticlesSlot2;
-    public ParticleSystem damageParticlesSlot3;
-=======
     //int contador;
->>>>>>> Stashed changes
     //public EnemyAldeano enemyaldean;
     public Enemy enemyy;
     //private CombatPosition combat;
@@ -176,11 +170,7 @@ public class Combat : MonoBehaviour
             deckscript.SlotBool1 = false;
             int carddmgtrue = carddisplayscriptinSlot1.Thecarddmg();
             enemyy.health -= carddmgtrue;
-<<<<<<< Updated upstream
-            damageParticles.Play();
-=======
             carddisplayscriptinSlot1.ejecutarpasivadelacarta();
->>>>>>> Stashed changes
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
@@ -198,11 +188,7 @@ public class Combat : MonoBehaviour
             deckscript.SlotBool2 = false;
             int carddmgtrue = carddisplayscriptinSlot2.Thecarddmg();
             enemyy.health -= carddmgtrue;
-<<<<<<< Updated upstream
-            damageParticlesSlot2.Play();
-=======
             carddisplayscriptinSlot2.ejecutarpasivadelacarta();
->>>>>>> Stashed changes
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
@@ -219,11 +205,7 @@ public class Combat : MonoBehaviour
             deckscript.SlotBool3 = false;
             int carddmgtrue = carddisplayscriptinSlot3.Thecarddmg();
             enemyy.health -= carddmgtrue;
-<<<<<<< Updated upstream
-            damageParticlesSlot3.Play();
-=======
             carddisplayscriptinSlot3.ejecutarpasivadelacarta();
->>>>>>> Stashed changes
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
@@ -235,7 +217,7 @@ public class Combat : MonoBehaviour
     }
     public void clickonslotfour()
     {
-        if (player.vigorPoints>=carddisplayscriptinSlot4.thevigorCostOfMyCard)
+        if (player.vigorPoints >= carddisplayscriptinSlot4.thevigorCostOfMyCard)
         {
             carddisplayscriptinSlot4.ejecutarpasivadelacartadevigor();
             VigorDeckScript.SlotBool4 = false;
