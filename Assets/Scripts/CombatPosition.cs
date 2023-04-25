@@ -10,7 +10,6 @@ public class CombatPosition : MonoBehaviour
     public ParticleSystem ParticulasAmarillas;
     public Enemy enemyy;
     public Combat combatscript;
-    public List<GameObject> enemyGObj;
     public Transform enemytransf;
     public GameObject areaWhereTheEnemySpawns;
     public bool battlePosition = false;
@@ -83,21 +82,6 @@ public class CombatPosition : MonoBehaviour
             {
                 c.Priority = 0;
             }
-        }
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.layer == 9)
-        {
-            Destroy(other.gameObject);
-            enemiesreminder = 1;
-            Enemy actualenemy =  Instantiate(enemyGObj[Random.Range(0, enemyGObj.Count)], areaWhereTheEnemySpawns.transform.position, areaWhereTheEnemySpawns.transform.rotation).GetComponent<Enemy>();
-            actualenemy.Setcombat(this);
-            actualenemy.SetPlayer(player);
-            combatscript.setenemy(actualenemy);
-            Destroy(areaWhereTheEnemySpawns.gameObject);
-            combatON();
         }
     }
 }

@@ -285,11 +285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7864799debd9f1f49a415e9631e6210e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ParticulasAmarillas: {fileID: 8060869572916255339, guid: 45fab5533b171c84eafdfbc1ee43d0fb, type: 3}
+  ParticulasAmarillas: {fileID: 0}
   enemyy: {fileID: 0}
   combatscript: {fileID: 5790167006782233436}
-  enemyGObj:
-  - {fileID: 8249360497324799467, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
+  enemyGObj: []
   enemytransf: {fileID: 8249360497324799471, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
   areaWhereTheEnemySpawns: {fileID: 0}
   battlePosition: 0
