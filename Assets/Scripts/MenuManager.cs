@@ -8,10 +8,9 @@ public class MenuManager : MonoBehaviour
     public GameObject MainMenu;
     public GameObject MenuTutorial;
     public GameObject MenuCredits;
-    public string scenename;
 
-    void loadscene()
+    public void loadscene(string scenename)
     {
-        //SceneManager.LoadScene();
+        SceneManager.LoadScene(scenename);
     }
 }
