@@ -433,6 +433,7 @@ MonoBehaviour:
   NombredelaCartadeVigoryEjecutarPasiva: 
   player: {fileID: 0}
   stadisticplayerScipt: {fileID: 2034795155}
+  enemyy: {fileID: 0}
 --- !u!114 &29717457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1262,6 +1263,7 @@ MonoBehaviour:
   NombredelaCartadeVigoryEjecutarPasiva: 
   player: {fileID: 0}
   stadisticplayerScipt: {fileID: 2034795155}
+  enemyy: {fileID: 0}
 --- !u!114 &200995805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1366,6 +1368,7 @@ MonoBehaviour:
   NombredelaCartadeVigoryEjecutarPasiva: 
   player: {fileID: 0}
   stadisticplayerScipt: {fileID: 2034795155}
+  enemyy: {fileID: 0}
 --- !u!114 &256322633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8501,6 +8504,18 @@ PrefabInstance:
       propertyPath: areaWhereTheEnemySpawns
       value: 
       objectReference: {fileID: 2092601326}
+    - target: {fileID: 5299470838625391949, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: ScriptVigorCardDisplaySlot4
+      value: 
+      objectReference: {fileID: 200995804}
+    - target: {fileID: 5299470838625391949, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: ScriptVigorCardDisplaySlot5
+      value: 
+      objectReference: {fileID: 29717456}
+    - target: {fileID: 5299470838625391949, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: ScriptVigorCardDisplaySlot6
+      value: 
+      objectReference: {fileID: 256322632}
     - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: mainCamera
       value: 

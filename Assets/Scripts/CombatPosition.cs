@@ -24,6 +24,9 @@ public class CombatPosition : MonoBehaviour
     int enemiesreminder;
     public Deck deckscript;
     public VigorDeck vigordeckscript;
+    public VigorCardsDisplay ScriptVigorCardDisplaySlot4;
+    public VigorCardsDisplay ScriptVigorCardDisplaySlot5;
+    public VigorCardsDisplay ScriptVigorCardDisplaySlot6;
 
     public void Start()
     {
@@ -95,6 +98,9 @@ public class CombatPosition : MonoBehaviour
             actualenemy.Setcombat(this);
             actualenemy.SetPlayer(player);
             combatscript.setenemy(actualenemy);
+            ScriptVigorCardDisplaySlot4.setenemy(actualenemy);
+            ScriptVigorCardDisplaySlot5.setenemy(actualenemy);
+            ScriptVigorCardDisplaySlot6.setenemy(actualenemy);
             Destroy(areaWhereTheEnemySpawns.gameObject);
             combatON();
         }

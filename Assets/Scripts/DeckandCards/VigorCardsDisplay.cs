@@ -18,6 +18,8 @@ public class VigorCardsDisplay : MonoBehaviour
     public string NombredelaCartadeVigoryEjecutarPasiva;
     public Player player;
     public StadisticPlayer stadisticplayerScipt;
+    
+    public Enemy enemyy;
 
     private void Start()
     {
@@ -29,6 +31,10 @@ public class VigorCardsDisplay : MonoBehaviour
         vigortext.text = card.vigorcost.ToString();
         thevigorCostOfMyCard = card.vigorcost;
 
+    }
+    public void setenemy(Enemy enemy)
+    {
+        enemyy = enemy;
     }
     public void actualizarinfodeUIdeCadaCarta()
     {
@@ -52,6 +58,20 @@ public class VigorCardsDisplay : MonoBehaviour
             case "Warrior Pendant":
                 stadisticplayerScipt.health += 5;
                 Debug.Log("te has curado 5 puntos de salud");
+                break;
+            case "Senpukku":
+                
+                if (stadisticplayerScipt.health <= 5)
+                {
+                    enemyy.health -= 7;
+                }
+                Debug.Log("has cometido Senpukku");
+                break;
+            case "Sacrifice":
+
+                enemyy.health -= 12;
+                stadisticplayerScipt.health -= 7;
+                Debug.Log("te has inflingido daño y mucho mas al enemigo");
                 break;
 
         }
