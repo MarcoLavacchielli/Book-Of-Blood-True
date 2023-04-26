@@ -43,6 +43,8 @@ public class Combat : MonoBehaviour
     private bool cartafueUsada6 = true;
     private bool enemyattack = false;
     public VigorDeck VigorDeckScript;
+    public StadisticPlayer PlayerStadisticsScript;
+    //int MoreVigorPerRound=10;
 
     public object WaitForSeconds3 { get; private set; }
 
@@ -127,6 +129,7 @@ public class Combat : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && enemyattack == true)
         {
+            //PlayerStadisticsScript.vigor = MoreVigorPerRound + 1;
             button1.interactable = true;
             button2.interactable = true;
             button3.interactable = true;
@@ -223,38 +226,41 @@ public class Combat : MonoBehaviour
     }
     public void clickonslotfour()
     {
-        if (player.vigorPoints >= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor())
+        if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor())
         {
-            player.vigorPoints -= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor();
+            PlayerStadisticsScript.vigor -= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor();
+            Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
             carddisplayscriptinSlot4.ejecutarpasivadelacartadevigor();
             activaryDesactivarCartaAlUsarlaSlot4();
+
             button4.interactable = false;
             VigorDeckScript.SlotBool4 = false;
             damageparticleSlot4.Play();
-            Debug.Log("restan " + player.vigorPoints + " puntos de vigor");
         }
     }
     public void clickonslotfive()
     {
-        if (player.vigorPoints >= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor())
+        if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor())
         {
-            player.vigorPoints -= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor();
+            PlayerStadisticsScript.vigor -= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor();
+            Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
             carddisplayscriptinSlot5.ejecutarpasivadelacartadevigor();
+
             activaryDesactivarCartaAlUsarlaSlot5();
             button5.interactable = false;
             VigorDeckScript.SlotBool5 = false;
-            Debug.Log("restan " + player.vigorPoints + " puntos de vigor");
         }
     }
     public void clickonslotsix()
     {
-        if (player.vigorPoints >= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor())
+        if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor())
         {
-            player.vigorPoints -= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor();
+            PlayerStadisticsScript.vigor -= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor();
+            Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
             carddisplayscriptinSlot6.ejecutarpasivadelacartadevigor();
-            VigorDeckScript.SlotBool6 = false;
-            Debug.Log("restan " + player.vigorPoints + " puntos de vigor");
+
             activaryDesactivarCartaAlUsarlaSlot6();
+            VigorDeckScript.SlotBool6 = false;
             button6.interactable = false;
         }
     }

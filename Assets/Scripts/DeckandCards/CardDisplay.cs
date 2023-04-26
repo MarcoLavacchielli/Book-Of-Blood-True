@@ -20,6 +20,7 @@ public class CardDisplay : MonoBehaviour
 
     public string NombredelaCartayEjecutarPasiva;
     public Player player;
+    public StadisticPlayer StatsPlayerScript;
 
     private void Start()
     {
@@ -70,7 +71,7 @@ public class CardDisplay : MonoBehaviour
         switch (NombredelaCartayEjecutarPasiva)
         {
             case "Sacred Font":
-                player.PlayerHealth += 5;
+                StatsPlayerScript.health += 5;
                 Debug.Log("te has curado 5 puntos de salud");
                 break;
            

@@ -17,6 +17,7 @@ public class VigorCardsDisplay : MonoBehaviour
 
     public string NombredelaCartadeVigoryEjecutarPasiva;
     public Player player;
+    public StadisticPlayer stadisticplayerScipt;
 
     private void Start()
     {
@@ -49,7 +50,7 @@ public class VigorCardsDisplay : MonoBehaviour
         switch (NombredelaCartadeVigoryEjecutarPasiva)
         {
             case "Warrior Pendant":
-                player.PlayerHealth += 5;
+                stadisticplayerScipt.health += 5;
                 Debug.Log("te has curado 5 puntos de salud");
                 break;
 
