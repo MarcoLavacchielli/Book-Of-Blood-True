@@ -71,7 +71,7 @@ public class VigorCardsDisplay : MonoBehaviour
 
                 enemyy.health -= 12;
                 stadisticplayerScipt.health -= 7;
-                Debug.Log("te has inflingido daño y mucho mas al enemigo");
+                Debug.Log("te has inflingido daño pero mucho mas al enemigo");
                 break;
 
         }
