@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 5790167006782233436}
   - component: {fileID: 7910656068851151482}
   - component: {fileID: 5712986794260492655}
+  - component: {fileID: 2566541265283969750}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -305,6 +306,9 @@ MonoBehaviour:
   camerascript: {fileID: 0}
   deckscript: {fileID: 7910656068851151482}
   vigordeckscript: {fileID: 5712986794260492655}
+  ScriptVigorCardDisplaySlot4: {fileID: 0}
+  ScriptVigorCardDisplaySlot5: {fileID: 0}
+  ScriptVigorCardDisplaySlot6: {fileID: 0}
 --- !u!114 &5790167006782233436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +346,7 @@ MonoBehaviour:
   button5: {fileID: 0}
   button6: {fileID: 0}
   VigorDeckScript: {fileID: 5712986794260492655}
+  PlayerStadisticsScript: {fileID: 0}
 --- !u!114 &7910656068851151482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,6 +385,19 @@ MonoBehaviour:
   SlotBool4: 0
   SlotBool5: 0
   SlotBool6: 0
+--- !u!114 &2566541265283969750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8077958657708868338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355303126e14d824680cbf61d03a4de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAnim: {fileID: 0}
 --- !u!1 &8077958658602386710
 GameObject:
   m_ObjectHideFlags: 0

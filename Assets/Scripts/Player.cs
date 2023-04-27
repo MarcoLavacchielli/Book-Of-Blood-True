@@ -39,13 +39,18 @@ public class Player : MonoBehaviour
     private Vector3 camRight;
     private Vector3 movePLayer;
     //CombatPosition _combatposition;
+    Charview view;
 
     public CharacterController player;
     public float playerspeed;
     public int PlayerHealth = 30;
     public int vigorPoints = 40;
     public float gravity = 9.8f;
-    
+
+    private void Awake()
+    {
+        view = GetComponent<Charview>();
+    }
     private void Start()
     {
         player = GetComponent<CharacterController>();
@@ -67,6 +72,15 @@ public class Player : MonoBehaviour
         setGravity();
 
         player.Move(movePLayer * playerspeed * Time.deltaTime);
+
+        if(movePLayer.magnitude > 0.3f)
+        {
+            view.Isrunning(true);
+        }
+        else
+        {
+            view.Isrunning(false);
+        }
     }
 
     
