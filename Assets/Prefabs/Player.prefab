@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 7910656068851151482}
   - component: {fileID: 5712986794260492655}
   - component: {fileID: 2566541265283969750}
+  - component: {fileID: 7947561425360375091}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -235,10 +236,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2.0338752
+  m_Radius: 0.26
+  m_Height: 1.2158983
   m_Direction: 1
-  m_Center: {x: 0, y: 0.9914447, z: 0}
+  m_Center: {x: -0.0029813945, y: 0.6128644, z: 0.023675501}
 --- !u!143 &2164653984255317432
 CharacterController:
   m_ObjectHideFlags: 0
@@ -250,8 +251,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0
-  m_Radius: 0.5
+  m_Height: 0.00001
+  m_Radius: 0.50423276
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -397,7 +398,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 355303126e14d824680cbf61d03a4de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myAnim: {fileID: 0}
+--- !u!114 &7947561425360375091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8077958657708868338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 370d1b38e8da182478011df5a9167918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 30
+  vigor: 40
 --- !u!1 &8077958658602386710
 GameObject:
   m_ObjectHideFlags: 0
