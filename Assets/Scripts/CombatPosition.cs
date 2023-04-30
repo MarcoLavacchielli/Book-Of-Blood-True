@@ -44,7 +44,7 @@ public class CombatPosition : MonoBehaviour
 
             myGM.activeUI();
             battlePosition = false;
-            camerascript.enabled = true;
+            //camerascript.enabled = true;
             player.enabled = true;
             playerRB.constraints = RigidbodyConstraints.None;
             playerRB.constraints = RigidbodyConstraints.FreezeRotation;
@@ -52,7 +52,7 @@ public class CombatPosition : MonoBehaviour
             Debug.Log("Saliste del combate");
             //playerRB.freezeRotation = false;
             //player.enabled = true;
-            
+            camerascript.enabled = true;
         }
     }
 

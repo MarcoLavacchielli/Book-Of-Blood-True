@@ -432,6 +432,8 @@ MonoBehaviour:
   thevigorCostOfMyCard: 0
   NombredelaCartadeVigoryEjecutarPasiva: 
   player: {fileID: 0}
+  stadisticplayerScipt: {fileID: 2034795155}
+  enemyy: {fileID: 0}
 --- !u!114 &29717457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1260,6 +1262,8 @@ MonoBehaviour:
   thevigorCostOfMyCard: 0
   NombredelaCartadeVigoryEjecutarPasiva: 
   player: {fileID: 0}
+  stadisticplayerScipt: {fileID: 2034795155}
+  enemyy: {fileID: 0}
 --- !u!114 &200995805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1363,6 +1367,8 @@ MonoBehaviour:
   thevigorCostOfMyCard: 0
   NombredelaCartadeVigoryEjecutarPasiva: 
   player: {fileID: 0}
+  stadisticplayerScipt: {fileID: 2034795155}
+  enemyy: {fileID: 0}
 --- !u!114 &256322633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2160,7 +2166,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1393160490}
         m_TargetAssemblyTypeName: Combat, Assembly-CSharp
-        m_MethodName: activaryDesactivarCartaAlUsarlaSlot4
+        m_MethodName: clickonslotfour
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4764,6 +4770,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036452868}
   m_CullTransparentMesh: 1
+--- !u!1001 &1059273180
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8077958658333811774}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+      propertyPath: m_Name
+      value: Romualdo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
 --- !u!1 &1082629059
 GameObject:
   m_ObjectHideFlags: 0
@@ -5385,7 +5448,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1393160490}
         m_TargetAssemblyTypeName: Combat, Assembly-CSharp
-        m_MethodName: activaryDesactivarCartaAlUsarlaSlot6
+        m_MethodName: clickonslotsix
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5679,7 +5742,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8077958657708868335, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1455350507}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77cb29c30c68d77478505583e1e35024, type: 3}
@@ -5690,7 +5753,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1455350507}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a75fb82f03a3d5846b756eb4c4bfd576, type: 3}
@@ -5798,6 +5861,11 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1455350507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8077958657708868338, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+  m_PrefabInstance: {fileID: 8077958658333811773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1494897266
 GameObject:
   m_ObjectHideFlags: 0
@@ -6155,6 +6223,7 @@ MonoBehaviour:
   attackdmg: 0
   NombredelaCartayEjecutarPasiva: 
   player: {fileID: 0}
+  StatsPlayerScript: {fileID: 0}
 --- !u!114 &1581599282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7300,7 +7369,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1393160490}
         m_TargetAssemblyTypeName: Combat, Assembly-CSharp
-        m_MethodName: activaryDesactivarCartaAlUsarlaSlot5
+        m_MethodName: clickonslotfive
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7452,12 +7521,38 @@ MonoBehaviour:
   attackdmg: 0
   NombredelaCartayEjecutarPasiva: 
   player: {fileID: 0}
+  StatsPlayerScript: {fileID: 0}
+--- !u!1 &1940881430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+  m_PrefabInstance: {fileID: 1059273180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1940881432
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940881430}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
+  m_Controller: {fileID: 9100000, guid: a1011284b747e6547b7d93a5122f8292, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1950983790 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1455350507}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77dde7aaf5a5160458b2bad6508c44bf, type: 3}
@@ -7784,12 +7879,26 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1455350507}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25c77a0e4092ed349ac62f62d597fa4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2034795155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455350507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 370d1b38e8da182478011df5a9167918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 30
+  vigor: 40
 --- !u!1 &2040130640
 GameObject:
   m_ObjectHideFlags: 0
@@ -8250,6 +8359,7 @@ MonoBehaviour:
   attackdmg: 0
   NombredelaCartayEjecutarPasiva: 
   player: {fileID: 0}
+  StatsPlayerScript: {fileID: 0}
 --- !u!114 &2144618736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8428,6 +8538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: eyes
       objectReference: {fileID: 0}
+    - target: {fileID: 1351054344476017814, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2482379694359261399, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.64
@@ -8448,6 +8562,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.354
       objectReference: {fileID: 0}
+    - target: {fileID: 2566541265283969750, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: myAnim
+      value: 
+      objectReference: {fileID: 1940881432}
     - target: {fileID: 5299470838625391949, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: mainCamera
       value: 
@@ -8476,6 +8594,18 @@ PrefabInstance:
       propertyPath: areaWhereTheEnemySpawns
       value: 
       objectReference: {fileID: 2092601326}
+    - target: {fileID: 5299470838625391949, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: ScriptVigorCardDisplaySlot4
+      value: 
+      objectReference: {fileID: 200995804}
+    - target: {fileID: 5299470838625391949, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: ScriptVigorCardDisplaySlot5
+      value: 
+      objectReference: {fileID: 29717456}
+    - target: {fileID: 5299470838625391949, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: ScriptVigorCardDisplaySlot6
+      value: 
+      objectReference: {fileID: 256322632}
     - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: mainCamera
       value: 
@@ -8543,15 +8673,15 @@ PrefabInstance:
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: cardOrange4
       value: 
-      objectReference: {fileID: 479279379}
+      objectReference: {fileID: 200995805}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: cardOrange5
       value: 
-      objectReference: {fileID: 1879049560}
+      objectReference: {fileID: 29717457}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: cardOrange6
       value: 
-      objectReference: {fileID: 305855166}
+      objectReference: {fileID: 256322633}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: damageParticleSlot1
       value: 
@@ -8568,6 +8698,10 @@ PrefabInstance:
       propertyPath: damageparticleSlot4
       value: 
       objectReference: {fileID: 526597663}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: PlayerStadisticsScript
+      value: 
+      objectReference: {fileID: 2034795155}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: carddisplayscriptinSlot1
       value: 
@@ -8672,8 +8806,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8077958658602386710, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+--- !u!4 &8077958658333811774 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077958657340852550, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+  m_PrefabInstance: {fileID: 8077958658333811773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9112766969278726821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8971,31 +9114,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.84000003
+      value: 24.73
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.32000017
+      value: 3.2599998
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.49
+      value: 12.729999
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.94278806
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.05172855
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.32886055
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.0180438
       objectReference: {fileID: 0}
     - target: {fileID: 9111124668897760994, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.data[0].second
