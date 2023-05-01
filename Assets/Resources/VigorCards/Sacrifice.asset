@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sacrifice
   m_EditorClassIdentifier: 
   name: Sacrifice
-  description: damage yourself 7 points to deal 12 to an enemy
+  description: <i><color=red>damage yourself</color></i> 7 points to deal 12 to an
+    enemy
   image: {fileID: 21300000, guid: a9f20f37e32d8c2468ae4e79d7e4692f, type: 3}
   vigorcost: 5

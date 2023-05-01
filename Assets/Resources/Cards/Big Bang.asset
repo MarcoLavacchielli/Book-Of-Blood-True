@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Big Bang
   m_EditorClassIdentifier: 
   name: Big Bang
-  description: This card hits all enemies with a very powerful explosion
+  description: Hits <i><color=red>all enemies</color></i> with a very powerful <i><color=red>explosion</color></i>
   image: {fileID: 21300000, guid: e0ffcc26206d7ed409401411281c1b5a, type: 3}
   vigorcost: 6
   attack: 4

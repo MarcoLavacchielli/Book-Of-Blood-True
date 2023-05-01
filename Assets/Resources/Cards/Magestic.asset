@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Magestic
   m_EditorClassIdentifier: 
   name: Magestic
-  description: An elegant spell
+  description: An <i><color=red>elegant</color></i> spell
   image: {fileID: 21300000, guid: 1ddd392f62f79b845838435086191807, type: 3}
   vigorcost: 3
   attack: 3

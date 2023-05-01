@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mortal Punch
   m_EditorClassIdentifier: 
   name: Mortal Punch
-  description: Punch that does great damage to the enemy
+  description: Punch that does <i><color=red>great damage</color></i> to the enemy
   image: {fileID: 21300000, guid: adad02917d97c3048aa04274c31fd349, type: 3}
   vigorcost: 3
   attack: 4

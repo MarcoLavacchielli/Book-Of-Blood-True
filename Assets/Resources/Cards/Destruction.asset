@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Destruction
   m_EditorClassIdentifier: 
   name: Destruction
-  description: This card does supreme damage to one enemy
+  description: Does <i><color=red>supreme</color></i> damage to <i><color=red>one</color></i>
+    enemy
   image: {fileID: 21300000, guid: a8980800f78746a428378301a996dc0f, type: 3}
   vigorcost: 10
   attack: 8

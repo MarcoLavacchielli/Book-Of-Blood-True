@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Warrior Pendant
   m_EditorClassIdentifier: 
   name: Warrior Pendant
-  description: ' Restores 5 points of health'
+  description: ' Restores 5 points of <i><color=green>health</color></i>'
   image: {fileID: 21300000, guid: 3a0f9ef120bd6f943b3d6bd97fe5a69e, type: 3}
   vigorcost: 1
