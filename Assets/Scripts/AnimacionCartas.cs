@@ -10,7 +10,7 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
     private Vector3 initialScale;
 
     public ParticleSystem SeleccionarCartas;
-
+    
     void Start()
     {
         
@@ -19,15 +19,25 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        
+        gameObject.layer = LayerMask.NameToLayer("CartaSeleccionada");
+
         LeanTween.scale(gameObject, initialScale * 1.5f, 0.2f);
+        
+
         SeleccionarCartas.Play();
+
+       
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        
+        gameObject.layer = LayerMask.NameToLayer("Default");
+
         LeanTween.scale(gameObject, initialScale, 0.2f);
+        
+
         SeleccionarCartas.Stop();
+
+       
     }
 }

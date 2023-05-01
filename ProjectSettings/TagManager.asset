@@ -17,13 +17,13 @@ TagManager:
   - MagicSeals
   - player
   - PlayerSensor
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Carta1
+  - Carta2
+  - Carta3
+  - Carta4
+  - Carta5
+  - Carta6
+  - CartaSeleccionada
   - 
   - 
   - 
