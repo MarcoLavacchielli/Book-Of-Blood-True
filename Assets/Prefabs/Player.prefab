@@ -205,6 +205,7 @@ MonoBehaviour:
   horizonalMove: 0
   verticalMove: 0
   mainCamera: {fileID: 0}
+  menumanagerscript: {fileID: 0}
   player: {fileID: 2164653984255317432}
   playerspeed: 5
   PlayerHealth: 30
@@ -322,10 +323,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75fb82f03a3d5846b756eb4c4bfd576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageParticleSlot1: {fileID: 8326400024902863589, guid: b0bf82bf5037e9c43b4009f16840089f, type: 3}
-  damageParticleSlot2: {fileID: 5568701411491732272, guid: 6690773f2648f8e418eee6fa7461dae7, type: 3}
-  damageParticleSlot3: {fileID: 7012167915347703447, guid: 3c73c58e5d8f33e41aef6fef7196d195, type: 3}
-  damageparticleSlot4: {fileID: 4187415657898623779, guid: 807ceac3da28afc47a42dafeea4a2a9a, type: 3}
+  damageParticleSlot1: {fileID: 0}
+  damageParticleSlot2: {fileID: 0}
+  damageParticleSlot3: {fileID: 0}
+  damageparticleSlot4: {fileID: 0}
   enemyy: {fileID: 0}
   deckscript: {fileID: 7910656068851151482}
   carddisplayscriptinSlot1: {fileID: 0}

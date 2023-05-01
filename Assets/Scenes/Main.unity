@@ -432,7 +432,7 @@ MonoBehaviour:
   thevigorCostOfMyCard: 0
   NombredelaCartadeVigoryEjecutarPasiva: 
   player: {fileID: 0}
-  stadisticplayerScipt: {fileID: 2034795155}
+  stadisticplayerScipt: {fileID: 0}
   enemyy: {fileID: 0}
 --- !u!114 &29717457
 MonoBehaviour:
@@ -1262,7 +1262,7 @@ MonoBehaviour:
   thevigorCostOfMyCard: 0
   NombredelaCartadeVigoryEjecutarPasiva: 
   player: {fileID: 0}
-  stadisticplayerScipt: {fileID: 2034795155}
+  stadisticplayerScipt: {fileID: 0}
   enemyy: {fileID: 0}
 --- !u!114 &200995805
 MonoBehaviour:
@@ -1367,7 +1367,7 @@ MonoBehaviour:
   thevigorCostOfMyCard: 0
   NombredelaCartadeVigoryEjecutarPasiva: 
   player: {fileID: 0}
-  stadisticplayerScipt: {fileID: 2034795155}
+  stadisticplayerScipt: {fileID: 0}
   enemyy: {fileID: 0}
 --- !u!114 &256322633
 MonoBehaviour:
@@ -4693,6 +4693,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991716289}
   m_CullTransparentMesh: 1
+--- !u!1 &998161253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6357384483750185438, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
+  m_PrefabInstance: {fileID: 9112766969278726821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &998161256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998161253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd9e66548f226b46b4ab69d79224c3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainMenu: {fileID: 0}
+  MenuTutorial: {fileID: 0}
+  MenuCredits: {fileID: 0}
 --- !u!1 &1036452868
 GameObject:
   m_ObjectHideFlags: 0
@@ -5742,7 +5762,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8077958657708868335, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455350507}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77cb29c30c68d77478505583e1e35024, type: 3}
@@ -5753,7 +5773,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455350507}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a75fb82f03a3d5846b756eb4c4bfd576, type: 3}
@@ -5861,11 +5881,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &1455350507 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8077958657708868338, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-  m_PrefabInstance: {fileID: 8077958658333811773}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1494897266
 GameObject:
   m_ObjectHideFlags: 0
@@ -7552,7 +7567,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455350507}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77dde7aaf5a5160458b2bad6508c44bf, type: 3}
@@ -7879,26 +7894,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455350507}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25c77a0e4092ed349ac62f62d597fa4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2034795155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455350507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 370d1b38e8da182478011df5a9167918, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 30
-  vigor: 40
 --- !u!1 &2040130640
 GameObject:
   m_ObjectHideFlags: 0
@@ -8703,10 +8704,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 526597663}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: PlayerStadisticsScript
-      value: 
-      objectReference: {fileID: 2034795155}
-    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: carddisplayscriptinSlot1
       value: 
       objectReference: {fileID: 1909126501}
@@ -8742,10 +8739,6 @@ PrefabInstance:
       propertyPath: Slot3
       value: 
       objectReference: {fileID: 2144618735}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: _deck.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -8802,6 +8795,10 @@ PrefabInstance:
       propertyPath: enemytransf
       value: 
       objectReference: {fileID: 8249360497324799471, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
+    - target: {fileID: 8077958657708868335, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: menumanagerscript
+      value: 
+      objectReference: {fileID: 998161256}
     - target: {fileID: 8077958657708868335, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: areaWhereTheEnemySpawns
       value: 

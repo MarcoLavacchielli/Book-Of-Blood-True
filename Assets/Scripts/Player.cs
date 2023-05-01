@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
     private Vector3 movePLayer;
     //CombatPosition _combatposition;
     Charview view;
+    public MenuManager menumanagerscript;
 
     public CharacterController player;
     public float playerspeed;
@@ -57,6 +58,11 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            menumanagerscript.Restartscene();
+        }
+
         horizonalMove = Input.GetAxis("Horizontal");
         verticalMove = Input.GetAxis("Vertical");
         //PlayerDies();

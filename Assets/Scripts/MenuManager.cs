@@ -13,4 +13,9 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene(scenename);
     }
+
+    public void Restartscene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
