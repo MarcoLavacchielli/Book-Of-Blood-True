@@ -4693,6 +4693,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991716289}
   m_CullTransparentMesh: 1
+--- !u!114 &1003143804 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7123913083679719163, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
+  m_PrefabInstance: {fileID: 9112766969278726821}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd9e66548f226b46b4ab69d79224c3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1036452868
 GameObject:
   m_ObjectHideFlags: 0
@@ -8799,6 +8810,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8249360497324799471, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
     - target: {fileID: 8077958657708868335, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: menumanagerscript
+      value: 
+      objectReference: {fileID: 1003143804}
+    - target: {fileID: 8077958657708868335, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: areaWhereTheEnemySpawns
       value: 
       objectReference: {fileID: 2092601326}
@@ -9114,37 +9129,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.73
+      value: 0.84000003
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.2599998
+      value: 0.32000017
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.729999
+      value: -9.49
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.94278806
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.05172855
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.32886055
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0180438
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9111124668897760994, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.data[0].second
       value: 
       objectReference: {fileID: 9112766969278726825}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 44153026501925138, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
 --- !u!114 &9112766969278726822 stripped
 MonoBehaviour:
