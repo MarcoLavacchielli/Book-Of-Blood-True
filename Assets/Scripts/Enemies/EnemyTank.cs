@@ -8,7 +8,7 @@ public class EnemyTank : Enemy
     {
         base.Start();
     }
-    public void EnemyTurn()
+    public override void Enemyturn()
     {
         if (health <= 20 && health > 15)
         {

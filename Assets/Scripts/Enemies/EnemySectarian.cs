@@ -8,7 +8,7 @@ public class EnemySectarian : Enemy
     {
         base.Start();
     }
-    public void EnemyTurn()
+    public override void Enemyturn()
     {
         if (health <= 15 && health > 11)
         {

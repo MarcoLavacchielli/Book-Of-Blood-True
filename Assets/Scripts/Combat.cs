@@ -167,6 +167,8 @@ public class Combat : MonoBehaviour
                 activaryDesactivarCartaAlUsarlaSlot6();
             }
             enemyattack = false;
+            Debug.Log("Final del turno");
+            Debug.Log("Inicio el siguiente turno");
         }
     }
     public void clickonslotone()
