@@ -20,7 +20,7 @@ public class CombatPosition : MonoBehaviour
     public CinemachineVirtualCamera ActiveCamera;
     GameManager myGM;
     public MyCamera camerascript;
-    int enemiesreminder;
+    public int enemiesreminder;
     public Deck deckscript;
     public VigorDeck vigordeckscript;
     public VigorCardsDisplay ScriptVigorCardDisplaySlot4;
@@ -46,7 +46,6 @@ public class CombatPosition : MonoBehaviour
             myGM.activeUI();
             battlePosition = false;
             //camerascript.enabled = true;
-            StartCoroutine(CamaraTransicionCombate());
             player.enabled = true;
             playerRB.constraints = RigidbodyConstraints.None;
             playerRB.constraints = RigidbodyConstraints.FreezeRotation;
@@ -86,7 +85,7 @@ public class CombatPosition : MonoBehaviour
         ActiveCamera = camera;
 
 
-        camerascript.canMoveCamera = false;
+       // camerascript.canMoveCamera = false;
 
         foreach (CinemachineVirtualCamera c in cameras)
         {
@@ -116,6 +115,7 @@ public class CombatPosition : MonoBehaviour
             ScriptVigorCardDisplaySlot5.setenemy(actualenemy);
             ScriptVigorCardDisplaySlot6.setenemy(actualenemy);
             Destroy(areaWhereTheEnemySpawns.gameObject);
+            StartCoroutine(CamaraTransicionCombate());
             combatON();
         }
     }
@@ -125,7 +125,7 @@ public class CombatPosition : MonoBehaviour
         yield return new WaitForSeconds(ContadorTransicion);
 
 
-        camerascript.canMoveCamera = true;
+        camerascript.canMoveCamera = false;
 
         yield return null;
     }

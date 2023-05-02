@@ -313,7 +313,7 @@ MonoBehaviour:
   ScriptVigorCardDisplaySlot4: {fileID: 0}
   ScriptVigorCardDisplaySlot5: {fileID: 0}
   ScriptVigorCardDisplaySlot6: {fileID: 0}
-  ContadorTransicion: 3
+  ContadorTransicion: 1
 --- !u!114 &5790167006782233436
 MonoBehaviour:
   m_ObjectHideFlags: 0

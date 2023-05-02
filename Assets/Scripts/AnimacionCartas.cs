@@ -19,7 +19,7 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        gameObject.layer = LayerMask.NameToLayer("CartaSeleccionada");
+        gameObject.layer = SortingLayer.GetLayerValueFromName("CardSelected");
 
         LeanTween.scale(gameObject, initialScale * 1.5f, 0.2f);
         
@@ -31,7 +31,7 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        gameObject.layer = LayerMask.NameToLayer("Default");
+        gameObject.layer = SortingLayer.GetLayerValueFromName("Cards");
 
         LeanTween.scale(gameObject, initialScale, 0.2f);
         

@@ -9,37 +9,29 @@ public class MyCamera : MonoBehaviour
      [Range (0, 1)] public float lerpValue;
      public float sensibilidad;
 
-    
-
     public bool canMoveCamera;
 
     
-
+    
     void Start()
-     {
-       
+    {
+        canMoveCamera = true;
         Cursor.lockState = CursorLockMode.Locked;
 
         target = GameObject.Find("Player").transform;
-     }
+    }
   
     void LateUpdate()
-     {
-        if(canMoveCamera == true)
-        {
+    {
+        
 
          transform.position = Vector3.Lerp(transform.position, target.position + offset, lerpValue);
          offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * sensibilidad, Vector3.up) * offset;
          transform.LookAt(target);
 
-        }
-        
-        
+    }
 
-
-        
-
-     }
+ 
 
 }
 
