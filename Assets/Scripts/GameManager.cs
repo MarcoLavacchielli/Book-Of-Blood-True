@@ -8,7 +8,9 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     Player player;
     public Image combatUI;
+    public Image Inventory;
     public bool cardsEquiped = false;
+    public bool inventoryactive = false;
     //Variables del mazo
     public List<Card> deck = new List<Card>();
     public Transform[] cardslots;
@@ -39,41 +41,6 @@ public class GameManager : MonoBehaviour
             //deckSizeText.text = deck.Count.ToString();
         //}
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private void Awake()
     {
         if (instance == null)
@@ -108,5 +75,10 @@ public class GameManager : MonoBehaviour
         cardsEquiped = !cardsEquiped;
         combatUI.gameObject.SetActive(cardsEquiped);
 
+    }
+    public void Activeinventory()
+    {
+        inventoryactive = !inventoryactive;
+        Inventory.gameObject.SetActive(inventoryactive);
     }
 }
